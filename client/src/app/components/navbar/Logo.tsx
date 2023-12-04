@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useEffect, useState } from 'react'
 import Link from "next/link"
 import Button from "./Button"
+import logo from ".//logo.png"
 
 const Logo = () => {
 
@@ -37,7 +38,7 @@ const Logo = () => {
     <div>
       <Link href="/" style={{ display: showButton ? "none" : "block"}}>
         <Image
-          src="/images/logo.png"
+          src=""
           alt="Logo"
           width={width < 1024 ? "150" : "250"}
           height={width < 1024 ? "45" : "74"}
