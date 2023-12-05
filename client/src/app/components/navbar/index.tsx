@@ -47,6 +47,11 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             <p>Support</p>
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/components/photo-window">
+                            <p>Test</p>
+                        </Link>
+                    </li>
                 </ul>
                 <Button />
             </div>
