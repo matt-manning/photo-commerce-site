@@ -18,118 +18,57 @@ const PhotoWindow = () => {
     }
  }
 
+//https://www.tutorialspoint.com/how-to-align-the-modal-content-box-to-the-center-of-any-screen#:~:text=Using%20CSS%20to%20position%20the,should%20be%20set%20to%2050%25.
+//https://www.tutorialspoint.com/how-to-add-popup-in-nextjs
+
+
+//h-screen flex justify-center items-center align-middle m-auto w-1/2 border-2 border-solid border-black rounded-3xl
+
+//https://coryrylan.com/blog/how-to-center-in-css-with-flexbox
   return (
     <div>
       <button onClick={() => setIsOpen(true)}>Open Photo Window</button>
-      <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex items-center justify-center absolute top-0 left-0 w-3/5 h-3/5"> {/*bg-white top-1/2 left-1/2 right-auto bottom-auto translate-x-[-50%] translate-y-[-50%] */}
-        <div className="w-80 h-52 bg-white p-5 border-2 border-solid border-black shadow-lg">
-          <div className="">
-            <img
-              className=""
-              alt="Image"
-              src=""
-            />
-            <div className="">
-              [Photographer Name]
-            </div>
-            <div className="">
+      <div className="">
+        <div className="">
+          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[70rem] h-[35rem] translate-x-[70%] translate-y-[70%]">
+            <div className="flex justify-center items-center w-full h-full border-2 border-solid border-black rounded-3xl">
+              <img
+                className="object-contain h-5/6 rounded-3xl"
+                alt="Mountain"
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" />
               <div className="">
-                Golden Hour at Matterhorn
-              </div>
-              <div className="">
-                Resolution: 6000 x 4000
-              </div>
-              <div className="">
-                Location: Matterhorn, Switzerland
-              </div>
-              <div className="">
-                Collection: Switzerland
-              </div>
-            </div>
-            <img
-              className=""
-              alt="Ellipse"
-              src="ellipse-1.png"
-            />
-            <div className="">
-              <div className="">
-                Print
-              </div>
-            </div>
-            <div className="">
-              Style
-            </div>
-            <div className="">
-              $99.99
-            </div>
-            <div className="">
-              Size
-            </div>
-            <div className="">
-              <div className="">
-                Canvas
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                Metal
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                Puzzle
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                5”×7”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                8”×10”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                11”×14”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                12”×16”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                16”×20”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                18”×24”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                18”×24”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                24”×36”
-              </div>
-            </div>
-            <div className="">
-              <div className="">
-                Add To Cart
-              </div>
-            </div>
-          </div>
-        </div>
-        <button onClick={() => setIsOpen(false)}>Close PhotoWindow</button>
-      </Modal>
+                <div>Mount Everest</div>
+                <div>Resolution: 6000 x 4000</div>
+                <div>Location: Himalayas, Nepal</div>
+                <div>Collection: Nepal</div>
+                <div>
+                  <img
+                    className=""
+                    alt="Photographer Profile"
+                    src=""/>
+                  <div>Photographer Name</div>
+                </div>
+                <div>Style</div>
+                <div>
 
+                </div>
+                <div>Size</div>
+                <div className="h-32 grid grid-cols-5 gap-1 content-center">
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">5"×7"</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">8"×10"</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">11"×14"</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">12"×16"</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">16"×20"</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">18"×24"</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">24"×36"</div>
+                </div>
+              </div>
+              <button onClick={() => setIsOpen(false)} className="relative">Close PhotoWindow</button>
+            </div>
+            
+          </Modal>
+        </div>
+      </div>
     </div>
 
   );
@@ -250,4 +189,110 @@ export default PhotoWindow
   </Modal>
 
 </div>
+*/
+
+/*
+          <div className="">
+            <img
+              className=""
+              alt="Image"
+              src=""
+            />
+            <div className="">
+              [Photographer Name]
+            </div>
+            <div className="">
+              <div className="">
+                Golden Hour at Matterhorn
+              </div>
+              <div className="">
+                Resolution: 6000 x 4000
+              </div>
+              <div className="">
+                Location: Matterhorn, Switzerland
+              </div>
+              <div className="">
+                Collection: Switzerland
+              </div>
+            </div>
+            <img
+              className=""
+              alt="Ellipse"
+              src="ellipse-1.png"
+            />
+            <div className="">
+              <div className="">
+                Print
+              </div>
+            </div>
+            <div className="">
+              Style
+            </div>
+            <div className="">
+              $99.99
+            </div>
+            <div className="">
+              Size
+            </div>
+            <div className="">
+              <div className="">
+                Canvas
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                Metal
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                Puzzle
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                5”×7”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                8”×10”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                11”×14”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                12”×16”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                16”×20”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                18”×24”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                18”×24”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                24”×36”
+              </div>
+            </div>
+            <div className="">
+              <div className="">
+                Add To Cart
+              </div>
+            </div>
+          </div>
 */
