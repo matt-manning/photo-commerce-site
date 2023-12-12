@@ -30,10 +30,10 @@ const PhotoWindow = () => {
       <button onClick={() => setIsOpen(true)}>Open Photo Window</button>
       <div className="">
         <div className="">
-          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[70rem] h-[35rem] translate-x-[70%] translate-y-[70%]">
+          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[80rem] h-[35rem] translate-x-[40%] translate-y-[70%]">
             <div className="flex justify-center items-center w-full h-full border-2 border-solid border-black rounded-3xl">
               <img
-                className="object-contain h-5/6 rounded-3xl"
+                className="object-contain m-6 h-5/6 rounded-3xl"
                 alt="Mountain"
                 src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" />
               <div className="">
@@ -49,11 +49,14 @@ const PhotoWindow = () => {
                   <div>Photographer Name</div>
                 </div>
                 <div>Style</div>
-                <div>
-
+                <div className="h-32 grid grid-cols-4 gap-1 content-center">
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">Print</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">Canvas</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">Metal</div>
+                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">Puzzle</div>
                 </div>
                 <div>Size</div>
-                <div className="h-32 grid grid-cols-5 gap-1 content-center">
+                <div className="h-32 grid grid-cols-4 gap-1 content-center">
                   <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">5"×7"</div>
                   <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">8"×10"</div>
                   <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#979797] rounded-lg">11"×14"</div>
