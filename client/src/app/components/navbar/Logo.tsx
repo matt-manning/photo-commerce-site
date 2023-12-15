@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { useEffect, useState } from 'react'
 import Link from "next/link"
-import Button from "./Button"
+import Login from "./Login"
 import logo from ".//logo.png"
 
 const Logo = () => {
@@ -45,7 +45,7 @@ const Logo = () => {
           className="relative" />
       </Link>
       <div style={{ display: showButton ? "block" : "none"}}>
-          <Button />
+          <Login />
         </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 import Logo from "./Logo"
-import Button from "./Button"
+import Login from "./Login"
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   return (
@@ -53,7 +53,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                         </Link>
                     </li>
                 </ul>
-                <Button />
+                <Login />
             </div>
         </div>
     </div>
