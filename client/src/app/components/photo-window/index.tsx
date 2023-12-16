@@ -32,10 +32,10 @@ const PhotoWindow = () => {
       <button onClick={() => setIsOpen(true)}>Open Photo Window</button>
       <div className="">
         <div className="">
-          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[80rem] h-[35rem] translate-x-[1%] translate-y-[20%]">
-            <div className="flex justify-center items-start w-full h-full border-2 border-solid border-black rounded-3xl">
+          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[74rem] h-[35rem] translate-x-[1%] translate-y-[20%] bg-white rounded-3xl" style={{ overlay: { background: "rgb(161, 161, 170, 0.7)"}}}>
+            <div className="flex justify-center items-center w-full h-full rounded-3xl shadow-xl">
               <img
-                className="object-contain m-6 h-5/6 rounded-3xl"
+                className="flex justify-center items-center object-contain m-6 h-5/6 rounded-3xl"
                 alt="Mountain"
                 src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" />
               <div className="m-6">
@@ -67,7 +67,9 @@ const PhotoWindow = () => {
                   <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">18"×24"</div>
                   <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">24"×36"</div>
                 </div>
-                <button onClick={() => setIsOpen(false)} className="relative">Close PhotoWindow</button>
+                <div className="mt-4 text-lg text-blue-600 font-semibold">$99.99</div>
+                <div className="mt-4 flex justify-center items-center h-10 w-full bg-blue-500 rounded-3xl text-white font-bold">Add To Cart</div>
+                {/*<button onClick={() => setIsOpen(false)} className="relative">Close PhotoWindow</button>*/}
               </div>
             </div>
           </Modal>

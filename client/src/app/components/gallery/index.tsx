@@ -18,7 +18,7 @@ const images: string[] = ["https://upload.wikimedia.org/wikipedia/commons/e/e7/E
 const Gallery = () => {
   return (
     <div className="m-20">
-        <Masonry className="" columnsCount={3} gutter="15px">
+        <Masonry className="" columnsCount={4} gutter="15px">
             {images.map((image, i) => (
                 <img className="w-full block" key={i} src={image}/>
             ))}
