@@ -3,7 +3,7 @@ import PhotoWindow from '.'
 
 const TempPage = () => {
   return (
-    <div>
+    <div className="flex justify-center items-center">
         <PhotoWindow />
     </div>
   )

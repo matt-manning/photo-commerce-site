@@ -32,7 +32,8 @@ const PhotoWindow = () => {
       <button onClick={() => setIsOpen(true)}>Open Photo Window</button>
       <div className="">
         <div className="">
-          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[74rem] h-[35rem] translate-x-[1%] translate-y-[20%] bg-white rounded-3xl" style={{ overlay: { background: "rgb(161, 161, 170, 0.7)"}}}>
+          {/*translate-x-[1%] translate-y-[20%]*/}
+          <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} className="flex justify-center items-center w-[74rem] h-[35rem] bg-white rounded-3xl" style={{ overlay: { background: "rgb(161, 161, 170, 0.7)"}}}>
             <div className="flex justify-center items-center w-full h-full rounded-3xl shadow-xl">
               <img
                 className="flex justify-center items-center object-contain m-6 h-5/6 rounded-3xl"
@@ -52,23 +53,23 @@ const PhotoWindow = () => {
                 </div>
                 <div className="text-gray-600 font-semibold">Style</div>
                 <div className="h-10 grid grid-cols-4 gap-1 content-center">
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">Print</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">Canvas</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">Metal</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">Puzzle</div>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">Print</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">Canvas</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">Metal</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">Puzzle</button>
                 </div>
                 <div className="text-gray-600 font-semibold">Size</div>
                 <div className="h-20 grid grid-cols-4 gap-1 content-center">
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">5"×7"</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">8"×10"</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">11"×14"</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">12"×16"</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">16"×20"</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">18"×24"</div>
-                  <div className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg">24"×36"</div>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">5"×7"</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">8"×10"</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">11"×14"</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">12"×16"</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">16"×20"</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">18"×24"</button>
+                  <button className="flex justify-center items-center w-20 h-8 border-2 border-solid border-[#c5c5c5] rounded-lg hover:bg-gray-200">24"×36"</button>
                 </div>
                 <div className="mt-4 text-lg text-blue-600 font-semibold">$99.99</div>
-                <div className="mt-4 flex justify-center items-center h-10 w-full bg-blue-500 rounded-3xl text-white font-bold">Add To Cart</div>
+                <button className="mt-4 flex justify-center items-center h-10 w-full bg-blue-500 hover:bg-blue-600 rounded-3xl text-white font-bold">Add To Cart</button>
                 {/*<button onClick={() => setIsOpen(false)} className="relative">Close PhotoWindow</button>*/}
               </div>
             </div>
